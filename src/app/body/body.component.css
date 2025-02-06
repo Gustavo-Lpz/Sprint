@@ -1,0 +1,77 @@
+#section {
+    color: black;
+    padding: 35px;
+}
+
+.inspiracion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding-bottom: 100px;
+}
+
+.inspiracion h1 {
+    margin-bottom: 15px;
+}
+
+.insp2 {
+    padding-left: 275px;
+    padding-right: 275px;
+}
+
+
+.img {
+    height: 200px;
+    object-fit: cover;
+    width: 85%;
+    }
+
+.titles {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+}
+
+.estancia-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+.cards {
+    border-radius: 15px;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.estancia {
+    margin-bottom: 50px;
+}
+
+.estancia h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 100px;
+}
+
+.cards h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.cards p {
+    line-height: 25px;
+}

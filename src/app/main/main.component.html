@@ -1,0 +1,14 @@
+<div class="carousel">
+    <div class="main-image">
+      <img [src]="selectedImage" alt="Imagen principal">
+    </div>
+    <div class="thumbnails">
+      <img 
+        *ngFor="let img of images" 
+        [src]="img" 
+        alt="Miniatura" 
+        [class.active]="img === selectedImage"
+        (click)="selectImage(img)"
+      >
+    </div>
+  </div>

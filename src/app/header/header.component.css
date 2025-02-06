@@ -1,0 +1,67 @@
+header {
+    width: 100%;
+    background: black;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.alojate {
+margin-left: 10px;
+font-size: 16px;
+font-weight: bold;
+}
+
+.header-item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.lupa {
+    color: white;
+    margin-right: 5px;
+}
+
+.header-item li {
+    margin: 0 10px;
+}
+
+.separador {
+    color: white;
+}
+
+.lista {
+    display: flex;
+    text-decoration: none;
+    padding: 25px;
+    list-style: none;
+}
+
+.lista a {
+    text-decoration: none;
+    color: white;
+    margin-left: 250px;
+    margin-right: -10px;
+}
+
+.estancias {
+    color: black;
+    text-align: center;
+    background-color: rgb(199, 197, 197);
+    padding: 25px;
+}
+
+.estancias h1 {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.estancias h2 {
+    font-size: 14px;
+}
