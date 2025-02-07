@@ -1,3 +1,4 @@
+<div class="main">
 <div class="carousel">
     <div class="main-image">
       <img [src]="selectedImage" alt="Imagen principal">
@@ -13,7 +14,7 @@
     </div>
   </div>
 
-  <div>
+  <div class="main">
     <div class="hospedaje">
       <div class="aumento">
         <p>Huespedes</p>
@@ -21,8 +22,8 @@
         <span>{{ contador }}</span>
         <button class="boton" (click)="aumentar()">+</button>
       </div>
-      <div class="aumento">
-        <p class="noches">Noches</p>
+      <div class="aumento2">
+        <p>Noches</p>
         <button class="boton" (click)="disminuir2()">-</button>
         <span>{{ contador2 }}</span>
         <button class="boton" (click)="aumentar2()">+</button>
@@ -33,11 +34,13 @@
       </div>
       <div class="lista">
         <div *ngFor="let extra of extras">
-          <input type="checkbox" (change)="actualizarTotal(extra, $event)">
-          <label>{{extra.nombre}} ${{extra.precio}}</label>
+          <input type="checkbox" (change)="actualizarTotalExtras(extra, $event)">
+          <label class="label">{{extra.nombre}} ${{extra.precio}}</label>
         </div>
       </div>
       <hr>
-      <h4>Total: ${{ total }}</h4>
+      <h4 class="total">TOTAL CON IMPUESTOS: ${{ total }}</h4>
+      <button class="boton2">Reservar</button>
     </div>
   </div>
+</div>
