@@ -12,3 +12,32 @@
       >
     </div>
   </div>
+
+  <div>
+    <div class="hospedaje">
+      <div class="aumento">
+        <p>Huespedes</p>
+        <button class="boton" (click)="disminuir()">-</button>
+        <span>{{ contador }}</span>
+        <button class="boton" (click)="aumentar()">+</button>
+      </div>
+      <div class="aumento">
+        <p class="noches">Noches</p>
+        <button class="boton" (click)="disminuir2()">-</button>
+        <span>{{ contador2 }}</span>
+        <button class="boton" (click)="aumentar2()">+</button>
+      </div>
+      <hr>
+      <div>
+        <h3>Extras</h3>
+      </div>
+      <div class="lista">
+        <div *ngFor="let extra of extras">
+          <input type="checkbox" (change)="actualizarTotal(extra, $event)">
+          <label>{{extra.nombre}} ${{extra.precio}}</label>
+        </div>
+      </div>
+      <hr>
+      <h4>Total: ${{ total }}</h4>
+    </div>
+  </div>
